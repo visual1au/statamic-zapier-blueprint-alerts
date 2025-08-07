@@ -1,0 +1,48 @@
+{
+    "name": "visual1au/statamic-zapier-blueprint-alerts",
+    "description": "Shows alerts on Statamic form blueprint edit pages when Zapier webhooks are configured",
+    "type": "statamic-addon",
+    "keywords": [
+        "statamic",
+        "addon",
+        "zapier",
+        "webhooks",
+        "forms",
+        "blueprint"
+    ],
+    "homepage": "https://github.com/visual1au/statamic-zapier-blueprint-alerts",
+    "support": {
+        "issues": "https://github.com/visual1au/statamic-zapier-blueprint-alerts/issues",
+        "source": "https://github.com/visual1au/statamic-zapier-blueprint-alerts"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "V1 Support",
+            "email": "support@visual1.com.au"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "statamic/cms": "^4.0|^5.0"
+    },
+    "suggest": {
+        "gerttimmerman/statamic-zapier": "Required to detect Zapier webhooks"
+    },
+    "autoload": {
+        "psr-4": {
+            "ZapierBlueprintAlerts\\": "src/"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Zapier Blueprint Alerts",
+            "description": "Shows alerts on form blueprint edit pages when Zapier webhooks are configured"
+        },
+        "laravel": {
+            "providers": [
+                "ZapierBlueprintAlerts\\ServiceProvider"
+            ]
+        }
+    }
+}
