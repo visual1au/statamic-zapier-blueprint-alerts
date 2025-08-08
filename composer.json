@@ -1,29 +1,35 @@
 {
-    "name": "visual1au/statamic-zapier-alerts-fixed",
-    "type": "statamic-addon",
-    "description": "Show alerts on Statamic form blueprint pages when Zapier webhooks are configured",
-    "keywords": ["statamic", "zapier", "forms", "webhooks", "alerts"],
-    "require": {
-        "php": "^8.1",
-        "statamic/cms": "^5.0",
-        "gerttimmerman/statamic-zapier": "^1.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Visual1au\\StatamicZapierAlertsFixed\\": "src/"
-        }
-    },
-    "extra": {
-        "statamic": {
-            "name": "Zapier Blueprint Alerts (Fixed)",
-            "description": "Show alerts on form blueprint edit pages when Zapier webhooks are configured"
-        },
-        "laravel": {
-            "providers": [
-                "Visual1au\\StatamicZapierAlertsFixed\\ServiceProvider"
-            ]
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+	"name": "visual1au/statamic-zapier-alerts",
+	"type": "statamic-addon",
+	"description": "Show alerts on Statamic form blueprint pages when Zapier webhooks are configured",
+	"keywords": [
+		"statamic",
+		"zapier",
+		"forms",
+		"webhooks",
+		"alerts"
+	],
+	"require": {
+		"php": "^8.1",
+		"statamic/cms": "^5.0",
+		"gerttimmerman/statamic-zapier": "^1.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Visual1au\\StatamicZapierAlerts\\": "src/"
+		}
+	},
+	"extra": {
+		"statamic": {
+			"name": "Zapier Blueprint Alerts",
+			"description": "Show alerts on form blueprint edit pages when Zapier webhooks are configured"
+		},
+		"laravel": {
+			"providers": [
+				"Visual1au\\StatamicZapierAlerts\\ServiceProvider"
+			]
+		}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
 }

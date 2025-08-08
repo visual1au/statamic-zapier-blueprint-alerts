@@ -1,6 +1,6 @@
 <?php
 
-namespace Visual1au\StatamicZapierAlertsFixed;
+namespace Visual1au\StatamicZapierAlerts;
 
 use Illuminate\Support\Facades\View;
 use Statamic\Providers\AddonServiceProvider;
@@ -34,7 +34,7 @@ class ServiceProvider extends AddonServiceProvider
                     $hasZapierWebhooks = ! empty($webhooks);
                 } catch (\Exception $e) {
                     // Log errors for debugging
-                    \Log::error('Error checking Zapier webhooks: ' . $e->getMessage());
+                    \Log::error('Error checking Zapier webhooks: '.$e->getMessage());
                     $hasZapierWebhooks = false;
                 }
             }
