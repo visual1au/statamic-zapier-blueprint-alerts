@@ -1,4 +1,4 @@
-# Statamic Zapier Alerts (Fixed)
+# Statamic Zapier Alerts
 
 A Statamic addon that displays warning alerts on form blueprint edit pages when Zapier webhooks are configured for that form.
 
